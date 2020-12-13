@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body{background-color: #666666;
+				}
+			.photo {
+				width: 500px;
+				height: 344px;
+				background-color: #FF0000;
+				position: absolute;/* 换成fixed，滚动滚动条，始终出现中央 */
+				top: 50%;
+				left: 50%;/* 放到右下角 */
+				margin-top: -172px;
+				margin-left: -250px;
+			}
+			.photo h1{text-align: center;
+						color: #FFFDEF; 
+						padding: 20px 0;}
+			/* 设置2个div 的大小，边框 float：left在一排上显示，给第一个写margin：0 20px
+				调整两个div的位置给大的写overflow：hidden，给小的写overflow-y：auto（y轴自动变成带滚动条的，给大图片设置id，给小图设置a标签和对应的锚点）*/			
+		</style>
+	</head>
+	<body>
+		<div class="photo">
+			<h1>电子相册</h1>
+			<div class="big"></div>
+			<div class="small"></div>
+		</div>
+	</body>
+</html>

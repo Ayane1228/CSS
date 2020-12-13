@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			div{width: 800px;height: 30px;background-color: #f00;margin:50px auto;}
+			div ul li{float: left;list-style: none;}
+			div ul li a{	
+						text-decoration: none;
+						color: #000000;
+						background-color: #EEEEEE;
+						display: block;
+						height: 30px;
+						width: 100px;
+						text-align: center;
+						line-height: 30px;
+						margin-right: 1px;}
+			div ul li ol{display: none;position: absolute;width: 101px;}
+			/* 
+				display:none:隐藏元素，使得元素所在的空间也隐藏
+				visibility:hidden：可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。
+				hover之前的指鼠标移到上面会发生变化*/
+						
+			div ul li a:hover {
+								color: #ffffff;
+								background-color: #333333;
+								text-decoration: underline;
+			/* 让ol不影响正常的文档流，使用postion：absolute */
+			}
+			div ul li:hover ol{
+								display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">产品中心</a>
+						<ol>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ol>
+				</li>
+				<li><a href="#">客户服务</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			div {
+				width: 200px;
+				height: 200px;
+				border: 1px solid #000000;
+				background-color: #ff0;
+				float: left;
+				display: flex;
+				/* 弹性盒 */
+				justify-content: center;
+				/* 水平居中 */
+				align-items: center;
+				/* 垂直居中 */
+				box-sizing: border-box;
+				/* 		指定的宽度和高度（最小/最大属性）确定元素边框。
+												尺寸，对元素指定宽度和高度包括了padding和border。
+												通过从已设置的宽度和高度分别对齐边框和内部边距可获取内容的宽度和高度。 */
+			}
+
+			span {
+				width: 50px;
+				height: 50px;
+				display: block;
+				background-color: #990055;
+				border-radius: 50%;
+			}
+
+			div:nth-of-type(2) {
+				justify-content: space-around;
+				/* 在弹性盒对象的<div>元素中的局部周围留有空白 */
+			}
+
+			div:nth-of-type(3) {
+				justify-content: space-between;
+				/* 两端对齐 */
+				padding: 10px;
+				/* 圆形的左右加上距离 */
+
+			}
+
+			div:nth-of-type(3) span:nth-child(1) {
+				align-self: flex-start;
+				/* 	元素位于容器的开头。弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴起始边界。 */
+			}
+
+			div:nth-of-type(3) span:nth-child(3) {
+				align-self: flex-end;
+				/* 	元素位于容器的结尾。弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴结束边界。 */
+			}
+
+			nav {
+				width: 100%;
+				height: 50px;
+				display: flex;			/* 变成弹性盒 */
+				justify-content: space-around;/* 将父元素NAV变为弹性盒子，将nav中的span两端对齐 */
+			}
+
+
+			div:nth-of-type(4) {
+				flex-wrap: wrap;
+				/* 允许换行显示（换行显示2个nav标签）	规定灵活的项目在必要的时候拆行或拆列。 */
+			}
+			div:nth-of-type(5) {
+				flex-wrap: wrap;
+			}
+			div:nth-of-type(6) {
+				flex-wrap: wrap;
+			}
+		</style>
+	</head>
+	<body>
+		<div><span></span></div>
+		<div><span></span><span></span></div>
+		<div><span></span><span></span><span></span></div>
+		<div>
+			<nav><span></span><span></span></nav>
+			<nav><span></span><span></span></nav>
+		</div>
+		<div>
+			<nav><span></span><span></span></nav>
+			<nav><span></span></nav>
+			<nav><span></span><span></span></nav>
+		</div>
+		<div>
+			<nav><span></span><span></span></nav>
+			<nav><span></span><span></span></nav>
+			<nav><span></span><span></span></nav>
+			</div>
+	</body>
+</html>

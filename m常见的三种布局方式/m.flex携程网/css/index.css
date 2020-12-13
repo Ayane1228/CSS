@@ -1,0 +1,333 @@
+body{
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma,"Lucida Grande","verdana","Microsoft Yahei",STXihei,hei;
+    color: #000000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+div{
+    /* 使用c3盒模型 */
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.search_index{
+    /* fixed固定定位 以屏幕为主 */
+    max-width: 540px;
+    min-width: 320px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /*
+        定位之后的盒子 不能用margin：0 auto
+        可以用left：50%；
+        加上transform: translateX(-50%);向左移动自身的50%
+     */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 44px;
+    /* 给父盒子加上flex属性 */
+    display: flex;
+}
+.search{
+    position: relative;
+    font-size: 12px;
+    color: #666666;
+    /* 
+        让所有弹性盒模型对象的子元素都有相同的长度，
+        忽略它们内部的内容 
+    */
+    flex: 1;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #cccccc;
+    margin:7px 10px;
+    border-radius: 5px;
+    padding-left: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0 , .2);
+    background-color: #f6f6f6;
+}
+.search::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: pink;
+    background: url(../images/sprite.png) no-repeat -58px -278px;
+    background-size: 104px auto;
+    top:5px ;
+    left: 5px;
+}
+.user{
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: blue;
+}
+.user::before{
+    margin-left: 10px;
+    display: block;
+    content: " ";
+    margin-bottom: 1px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/sprite.png) no-repeat -58px -193px;
+    background-size: 104px auto;
+}
+.focus{
+    position: relative;
+    padding-top: 44px;
+    overflow: hidden;
+}
+.focus ul{
+    overflow: hidden;
+    width: 500%;
+    /* 显示第一张图片 */
+    margin-left: -100%;
+}
+.focus ul li{
+    width: 20%;
+    float: left;
+}
+.focus img{
+    width: 100%;
+}
+.focus ol{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+}
+.focus ol li{
+    display: inline-block;
+    list-style: none;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.focus ol .current{
+    width: 10px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.loacl-nav{
+    height: 64px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 3px 4px;
+    display: flex;
+}
+.loacl-nav li{
+    /* 每个li占一份 */
+    flex: 1;
+}
+.loacl-nav a{
+    font-size: 12px;
+    display: flex;
+    /* 主轴设置为Y轴 */
+    flex-direction: column;
+    /* 元素位于容器的中心。弹性盒子元素在该行的侧轴（纵轴）上居中放置。 */
+    align-items: center;
+}
+.loacl-nav li [class^="loacl-nav-icon"]{
+    width: 32px;
+    height: 32px;
+    background-color: pink;
+    margin-top: 8px;
+    background: url(../upload/home-fivemain-sprite2x@v7.15.png) no-repeat -8px -8px;
+    background-size:80px auto ;    
+}
+.loacl-nav li .loacl-nav-icon-icon2{
+    background-position: -4px -49px  ;
+}
+.loacl-nav li .loacl-nav-icon-icon3{
+    background-position: -4px -85px  ;
+}
+.loacl-nav li .loacl-nav-icon-icon4{
+    background-position: -4px -126px  ;
+}
+.loacl-nav li .loacl-nav-icon-icon5{
+    background-position: -4px -164px  ;
+}
+nav{
+    /* 使内部元素的radius值显示 */
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 4px;
+}
+.nav-common{
+    height: 88px;
+    background: pink;
+    display: flex;
+}
+.nav-common:nth-child(2){
+    margin: 4px 0;
+}
+.nav-items{
+    flex: 1;
+    border-right: 1px solid #ffffff;
+    /* 不冲突 */
+    display: flex;
+    /* 主轴设置为Y轴 */
+    flex-direction: column;
+}
+.nav-items:nth-child(3){
+    border-right: 1px solid transparent;
+}
+.nav-items a{
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.nav-items a:nth-child(1){
+    border-bottom: 1px solid #ffffff;
+}
+.jiudian{
+    border: none;
+    /* bottom center 靠低端 中央对齐 */
+    background: url(../images/grid-nav-items-hotel@v7.15.png) no-repeat bottom right;
+    background-size: 73px auto;
+}
+.nav-common:nth-child(1){
+    background: -webkit-linear-gradient(left,#FA5956,#FA9B4D);
+}
+.nav-common:nth-child(2){
+    background: -webkit-linear-gradient(left,#4B90ED,#53BBED);
+}
+.nav-common:nth-child(3){
+    background: -webkit-linear-gradient(left,#35C2A8,#6BD557);
+}
+.jipiao{
+    border: none;
+    /* bottom center 靠低端 中央对齐 */
+    background: url(../images/grid-nav-items-flight@v7.15.png) no-repeat bottom right;
+    background-size: 73px auto;
+    }
+.lvyou{
+    border: none;
+    /* bottom center 靠低端 中央对齐 */
+    background: url(../images/grid-nav-items-travel@v7.15.png) no-repeat bottom right;
+    background-size: 73px auto;
+ }
+ .subnav-entry{
+     border-radius: 8px;
+     background-color: #FAFAFC;
+     margin: 0 4px;
+     display: flex;
+     /* 可以换行 */
+     flex-wrap: wrap;
+ }    
+ .subnav-entry li{
+     flex: 20%;
+ }
+ .subnav-entry a{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 9px;
+     color: #000000;
+ }
+ .subnav-entry li [class^="subnav-entry-icon"]{
+     width: 22px;
+     height: 20px;
+     text-align: center;
+     background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat ;
+     background-size: 23px auto;
+    }
+.subnav-entry li .subnav-entry-icon-icon1{
+    background-position: -5px -6px;
+}    
+.subnav-entry li .subnav-entry-icon-icon2{
+    background-position: -3px -26px;
+} 
+.subnav-entry li .subnav-entry-icon-icon3{
+    background-position: -3px -50px;
+} 
+.subnav-entry li .subnav-entry-icon-icon4{
+    background-position: -3px -73px;
+} 
+.subnav-entry li .subnav-entry-icon-icon5{
+    background-position: -3px -95px;
+} 
+.subnav-entry li .subnav-entry-icon-icon6{
+    background-position: -3px -117px;
+} 
+.subnav-entry li .subnav-entry-icon-icon7{
+    background-position: -3px -142px;
+} 
+.subnav-entry li .subnav-entry-icon-icon8{
+    background-position: -3px -165px;
+} 
+.subnav-entry li .subnav-entry-icon-icon9{
+    background-position: -3px -186px;
+} 
+.subnav-entry li .subnav-entry-icon-icon10{
+    background-position: -3px -210px
+} 
+.sale-box{
+    border-top: 1px solid #ffffff;
+    background: #ffffff;
+    margin: 4px;
+}
+.sale-hd{
+    height: 44px;
+    border: 1px solid #cccccc;
+    position: relative;
+}
+.sale-hd h2{
+    text-indent: -999px;
+    overflow: hidden;
+}
+.sale-hd::before{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    content: "";
+    width: 79px;
+    height: 15px;
+    background: url(../images/un_home_text.png) no-repeat 0 -18px;
+    background-size: 72px auto;
+}
+.more{
+    position: absolute;
+    right: 5px;
+    top: 9px;
+    background: -webkit-linear-gradient(left,#FF506C,#ff6bc6);
+    border-radius: 8px;
+    padding: 3px 20px 3px 10px;
+    color: #ffffff;
+}
+.more::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+}
+.row{
+    margin-top: 2px;
+    display: flex;
+}
+.row a{
+    flex: 1;
+}
+.row a img{
+    width: 100%;
+}

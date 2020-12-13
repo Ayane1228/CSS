@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .counter{
+            width: 750px;
+            margin: 0 auto;
+        }
+        /*屏幕大于 768px时 counter宽度为750px li为768/8 h为30px 浮动 */
+        .counter ul li{
+            width: 93.75px;
+            height: 30px;
+            background: green;
+            color: #ffffff;
+            text-align: center;
+            line-height: 30px;
+            float: left;
+        }
+        /* 屏幕小于768px（媒体查询） content为100% 整个窗口的宽度 修改li为w33.3% */
+        @media screen and (max-width:767px ) {
+            .counter{
+                width: 100%;
+            }
+            .counter ul li{
+                width: 33.3%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="counter">
+        <ul>
+            <li>导航栏</li>
+            <li>导航栏</li>
+            <li>导航栏</li>
+            <li>导航栏</li>
+            <li>导航栏</li>
+            <li>导航栏</li>
+        </ul>
+    </div>
+</body>
+</html> 

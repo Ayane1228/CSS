@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 	dl 199*236
+				dt 199*164*/
+			*{margin: 0;padding: 0;}
+			dl{width:400px;height: 400px;border-right: 1px solid #f00;border-bottom: 1px solid #f00;}
+			dl dt{width: 400px;height: 300px;border-left: 1px solid #f00;border-bottom: 1px solid #f00;text-align: center;}
+			dl dt img{vertical-align: middle;}
+			dl dt span{width: 0;height: 100%;display: inline-block;vertical-align: middle;}
+			
+			/*  vertical-align: middle:把此元素放置在父元素的中部。
+			vertical-align属性设置一个元素的垂直对齐方式。
+			该属性定义行内部元素的相对相对于该元素所在行的垂直对齐。允许指定负长度值和百分比值。
+			这导致元素降低而不是升高。在表单元格中，这个属性会设置单元格插入的单元格内容的对齐方式。
+			使得span和dt的中部对齐，img和dt的中部对齐
+			
+			inline-block:
+			使得span标签可以设置高度和使得span和img在一行上
+			inline-block 的元素既具有 block 元素可以设置宽高的特性，
+			同时又具有 inline 元素默认不换行的特性。当然不仅仅是这些特性，
+			比如 inline-block 元素也可以设置 vertical-align（因为这个垂直对齐属性只对设置了inline-block的元素有效） 属性。
+			*/
+		</style>
+	</head>
+	<body>
+		<dl>
+			<dt><img src="1.png"><span></span></dt>
+			<dd>跑步机</dd>
+			<dd>￥111111111</dd>
+		</dl>
+		<dl>
+			<dt><img src="2.png"><span></span></dt>
+			<dd>杯子</dd>
+			<dd>￥666</dd>
+		</dl>
+	</body>
+</html>

@@ -1,0 +1,289 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-align: none;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+/* top */
+#top {
+	height: 34px;
+	background: linear-gradient(#FDFEFD, #EBF1EF);
+	text-align: right;
+}
+
+#top p {
+	width: 950px;
+	margin: 0 auto;
+	line-height: 34px;
+	font-size: 18px;
+	color: #333333;
+}
+
+#top img {
+	vertical-align: top;
+}
+
+/* 	把元素的顶端与行中最高元素的顶端对齐 */
+#top img:nth-of-type(1) {
+	width: 14px;
+	height: 18px;
+	padding-top: 6px;
+	padding-right: 10px;
+}
+
+/* 本身高度加padding实现居中 */
+#top img:nth-of-type(2) {
+	width: 380px;
+	height: 32px;
+	padding-top: 2px;
+}
+
+/* nav */
+#nav {
+	width: 950px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#nav img {
+	width: 195px;
+	height: 42px;
+}
+
+#nav .logo {
+	float: left;
+	padding-top: 42px;
+	padding-right: 91px;
+}
+
+#nav ul {
+	float: left;
+}
+
+#nav ul li {
+	float: left;
+	font-size: 12px;
+	color: #1d1c1c;
+	padding-top: 48px;
+	padding-right: -10px;
+}
+
+#nav ul li a {
+	color: #666666;
+	width: 89px;
+	text-align: center;
+	padding-bottom: 20px;
+	float: left;
+}
+
+/* 	将A标签变为块状元素（display: block;），给每个A标签添加宽度，使间距相同,但使用了float：left，A标签自动变为块元素
+					若使用padding-right给文字加上右边边框线，则需要将文字放在div中，给文字和div分别设置高度，给div设置右边框线 */
+#nav ul li a:hover {
+	border-bottom: 3px solid #000000;
+	font-weight: 1000;
+	color: #000000;
+}
+
+/* banner */
+#banner img {
+	width: 100%;
+	display: block;
+}
+
+/* link */
+#link {
+	width: 950px;
+	height: 223px;
+	margin: 0 auto;
+}
+
+#link img {
+	width: 110px;
+	height: 110px;
+	float: left;
+	padding-top: 45px;
+	padding-right: 80px;
+}
+
+#link img:nth-of-type(1) {
+	padding: 40px;
+}
+
+/* case */
+#case {
+	width: 950px;
+	height: 446px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#case h3 {
+	text-align: center;
+	height: 50px;
+}
+
+#case h3 img {
+	width: 950px;
+	height: 50px;
+}
+
+#case ul {
+	width: 970px;
+	padding-top: 38px;
+}
+
+#case ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+#case ul li a img {
+	width: 172px;
+	height: 300px;
+}
+
+/* about */
+#about {
+	width: 950px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+#about h3 {
+	height: 70px;
+	background: url(title2.png) repeat-x;
+	text-align: center;
+	font-size: 22px;
+	line-height: 47px;
+}
+
+#about h3 b {
+	color: red;
+}
+
+#about h3 strong {
+	color: #FFFFFF;
+}
+
+#about h3 span {
+	display: block;
+	color: #30353a;
+	font-size: 13px;
+	background-color: #FFFFFF;
+	width: 125px;
+	/* 添加背景色为白色，调整宽度显示剩余部分的线 */
+	margin: -2px auto;
+	line-height: 18px;
+	/* ，调整文字所占高度==>自动调整白色背景的高度==>使得其水平居中 */
+}
+
+/* 将span元素变为块状元素放到下面 */
+#about h4 {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 30px;
+	color: #666666;
+}
+
+#about h4 b {
+	color: #000000;
+	font-size: 20px;
+}
+
+#about p {
+	text-align: center;
+}
+
+#about p a {
+	color: #666666;
+	font-size: 13px;
+	line-height: 27px;
+}
+
+/* process */
+#process {
+	width: 950px;
+	height: 245px;
+	margin: 0 auto;
+}
+
+#process h3 {
+	height: 70px;
+	background: url(title2.png) repeat-x;
+	text-align: center;
+	font-size: 22px;
+	line-height: 47px;
+}
+
+#process h3 b {
+	color: red;
+}
+
+#process h3 strong {
+	color: #FFFFFF;
+}
+
+#process h3 span {
+	display: block;
+	color: #30353a;
+	font-size: 13px;
+	background-color: #FFFFFF;
+	width: 125px;
+	/* 添加背景色为白色，调整宽度显示剩余部分的线 */
+	margin: 0 auto;
+	line-height: 18px;
+	/* ，调整文字所占高度==>自动调整白色背景的高度==>使得其水平居中 */
+}
+
+#process p {
+	text-align: center;
+	padding-top: 42px;
+	font-size: 12px;
+	color: #666666;
+}
+
+#process img {
+	vertical-align: middle;
+	margin: 0 10px;
+}
+
+#process img:nth-of-type(odd) {
+	width: 23px;
+	height: 23px;
+}
+
+/* bottom */
+#bottom {
+	width: 950px;
+	height: 117px;
+	padding-top: 28px;
+	margin: 0 auto;
+	border-top: 1px solid #b4b4b4;
+	line-height: 22px;
+}
+
+#bottom p {
+	text-align: center;
+	font-size: 12px;
+}
+
+#bottom p span {
+	padding: 0 5px;
+}
+
+#bottom p a {
+	color: #000000;
+}

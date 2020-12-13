@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			div{	
+					width: 300px;
+					height:300px;
+					
+					color: #FFFFFF;
+					text-align: center;
+					line-height: 300px;
+					top: 50%;
+					left: 50%;
+					margin-top: -100px ;
+					margin-left: -100px;
+					position: absolute;}
+			 p{
+					width: 260px;
+					height:260px;
+					background-image: url(1.jpg);			
+					border: 20px solid rgba(255,255,255,0.5);
+					background-origin: border-box;
+					transform-origin: center top;/* 改变旋转的基点位置 */
+					transition: 1s;	
+			}
+			h1{
+					font-size: 50px;
+					width: 300px;
+					height:300px;
+					background-color: #333333;
+					color: #FFFFFF;
+					text-align: center;
+					line-heihgt:300px;
+					opacity: 0;
+					position: absolute;top: 0;
+					transition: 1s;
+					transform-origin: center bottom;
+					transform: rotateX(180deg);/* 一开始给文字设置翻转效果180deg，hover之后取消翻转效果，使得hover之后文字为正的 */
+			}		
+
+			div:hover h1{opacity: 1;transform: rotateX(0deg);}
+			div:hover p{transform: rotatex(180deg);opacity:0;}/* opacity：不透明度，为0==>透明，为1==>显示 */		
+		</style>
+	</head>
+	<body>
+		<div>
+					<p></p>
+			<h1>gakki</h1>
+
+		</div>			
+							
+
+
+	</body>
+</html>

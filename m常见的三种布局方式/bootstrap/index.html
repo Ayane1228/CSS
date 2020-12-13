@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>CV</title>
+  <!-- Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 引入首页的css -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- 设置一个container -->
+  <div class="container ">
+    <!-- 
+        在md（ >=992px）的情况下，
+        分为三部分 header 2份 artic7份 aside3份 
+        3份用row包裹
+      -->
+    <!-- 
+        header 上logo logo中a标签插入图片
+      -->
+    <div class="row">
+      <div class="header col-md-2">
+        <a href="#">
+         <!--   进入超小屏幕下 隐藏图片  class = "hidden-xs"
+                超小屏幕下显示 class = "visable-xs"        
+        -->
+          <img src="images/logo.jpg" alt="图片未找到" class="hidden-xs">
+        </a>
+        <!-- 
+            下用nav
+            nav包含5个li 每个里包含a和文字
+            引入字体图片 给a加上想要字体图标的类名
+          -->
+        <div class="nav">
+          <ul>
+            <li><a href="#" class="glyphicon glyphicon-headphones ">Song</a></li>
+            <li><a href="#" class="glyphicon glyphicon-camera">Photo</a></li>
+            <li><a href="#" class="glyphicon glyphicon-cd">CD</a></li>
+            <li><a href="#" class="glyphicon glyphicon-film">Video</a></li>
+            <li><a href="#" class="glyphicon glyphicon-film">Video</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="article col-md-7">
+        <!-- 
+                上为news 要清除浮动
+                下为publish
+              -->
+        <div class="news clearfix">
+          <ul>
+            <li>
+              <!-- li a img 加上p标签 -->
+              <a href="#">
+                <img src="images/news (0).jpg" alt="无法找到">
+                <p>高垣枫</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/news (1).png" alt="无法找到">
+                <p>高垣枫</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/news（2）.jpg" alt="无法找到">
+                <p>初音</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/new（3）.png" alt="无法找到">
+                <p>rain</p>
+              </a>
+            </li>
+            <li>
+              <!-- li a img 加上p标签 -->
+              <a href="#">
+                <img src="images/news（4）.png" alt="无法找到">
+                <p>夜</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="publish">
+          <div class="row">
+            <!-- 
+                  小屏以上 为左9 右3
+                  col-sm-9
+                  col-sm-3
+                -->
+                        <div class="col-sm-9">
+                          <!-- 标题已设置好h3为24px -->
+                          <h3>佐仓绫音</h3>
+                          <!-- 灰色样式 -->
+                          <p class="text-muted hidden-xs">sakuraayane 发布于 2020-12-28</p>
+                          <p>佐仓绫音（さくらあやね，Ayane Sakura），1994年1月29日出生于东京都，日本女性声优。所属事务所为I'm Enterprise。</p>
+                          <p class="text-muted hidden-xs">阅读（2417）评论（1）赞（18）标签：声优/佐仓绫音</p>
+                        </div>
+                        <div class="col-sm-3 pic hidden-xs">
+                          <img src="images/pic.jpg" alt="">
+                        </div>
+          </div>
+          <div class="row">
+            <!-- 
+                  小屏以上 为左9 右3
+                  col-sm-9
+                  col-sm-3
+                -->
+                <div class="col-sm-9">
+                  <!-- 标题已设置好h3为24px -->
+                  <h3>佐仓绫音</h3>
+                  <!-- 灰色样式 -->
+                  <p class="text-muted hidden-xs">sakuraayane 发布于 2020-12-28</p>
+                  <p>佐仓绫音（さくらあやね，Ayane Sakura），1994年1月29日出生于东京都，日本女性声优。所属事务所为I'm Enterprise。</p>
+                  <p class="text-muted hidden-xs">阅读（2417）评论（1）赞（18）标签：声优/佐仓绫音</p>
+                </div>
+              <div class="col-sm-3 pic hidden-xs">
+                <img src="images/pic.jpg" alt="">
+              </div>
+          </div>
+          <div class="row">
+            <!-- 
+                  小屏以上 为左9 右3
+                  col-sm-9
+                  col-sm-3
+                -->
+                <div class="col-sm-9">
+                  <!-- 标题已设置好h3为24px -->
+                  <h3>佐仓绫音</h3>
+                  <!-- 灰色样式 -->
+                  <p class="text-muted hidden-xs">sakuraayane 发布于 2020-12-28</p>
+                  <p>佐仓绫音（さくらあやね，Ayane Sakura），1994年1月29日出生于东京都，日本女性声优。所属事务所为I'm Enterprise。</p>
+                  <p class="text-muted hidden-xs">阅读（2417）评论（1）赞（18）标签：声优/佐仓绫音</p>
+                </div>
+              <div class="col-sm-3 pic hidden-xs">
+                <img src="images/pic.jpg" alt="">
+              </div>
+          </div>
+          <div class="row">
+            <!-- 
+                  小屏以上 为左9 右3
+                  col-sm-9
+                  col-sm-3
+                -->
+                <div class="col-sm-9">
+                  <!-- 标题已设置好h3为24px -->
+                  <h3>佐仓绫音</h3>
+                  <!-- 灰色样式 -->
+                  <p class="text-muted hidden-xs">sakuraayane 发布于 2020-12-28</p>
+                  <p>佐仓绫音（さくらあやね，Ayane Sakura），1994年1月29日出生于东京都，日本女性声优。所属事务所为I'm Enterprise。</p>
+                  <p class="text-muted hidden-xs">阅读（2417）评论（1）赞（18）标签：声优/佐仓绫音</p>
+                </div>
+              <div class="col-sm-3 pic hidden-xs">
+                <img src="images/pic.jpg" alt="">
+              </div>
+          </div>
+          <div class="row">
+            <!-- 
+                  小屏以上 为左9 右3
+                  col-sm-9
+                  col-sm-3
+                -->
+                <div class="col-sm-9">
+                  <!-- 标题已设置好h3为24px -->
+                  <h3>佐仓绫音</h3>
+                  <!-- 灰色样式 -->
+                  <p class="text-muted hidden-xs">sakuraayane 发布于 2020-12-28</p>
+                  <p>佐仓绫音（さくらあやね，Ayane Sakura），1994年1月29日出生于东京都，日本女性声优。所属事务所为I'm Enterprise。</p>
+                  <p class="text-muted hidden-xs">阅读（2417）评论（1）赞（18）标签：声优/佐仓绫音</p>
+                </div>
+              <div class="col-sm-3 pic">
+                <img src="images/pic.jpg hidden-xs" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="aside col-md-3">
+        <a href="#" class="banner">
+          <img src="images/IM.png " alt="无法找到">
+        </a>
+        <a href="#" class="hot">
+          <span class="btn btn-primary">精神病院</span>
+          <h4 class="text-primar">I'm Enterprise</h4>
+          <p class="text-muted">アイムエンタープライズ，英文表记为 I'm Enterprise，
+            是日本的一家艺能事务所，主要经营声优事务。</p>
+        </a>
+      </div>        
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

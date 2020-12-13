@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding:0;}
+			/*图片会自动向下扩大3px，解决办法：给img添加display：block
+				放大镜：使用1张图，1张大，1张小，隐藏大图
+				z-index：可以改变元素的堆叠顺序
+				所有pic都浮动了 发生高度塌陷，
+				解决办法：1.给list加overflow：hidden（缺点不适合和盒定位一起使用）
+							2.给所有浮动元素的后面加一个空元素并且添加声明clear：both（28,70）*/
+			.listbox{width: 750px;margin: 50px auto;}
+			.listbox h3{
+						font-weight: 300;
+						font-size: 17px;
+						color:#a53333 ;
+						text-align: center;
+						padding-bottom: 5px;
+						border-bottom: 1px dashed  #CCCCCC;}
+			.pic{width:106px ;border: 1px #bbbbbb solid;padding: 5px;background-color: #EEEEEE;float: left;margin: 3px;position: relative;}			
+			.pic img{width: 100px;height: 75px;border: 1px #CCCCCC dashed;padding: 2px;background-color: #FFFFFF;display: block;}
+			.list{margin-top: 10px;}
+			.pic img:nth-of-type(2){width: 250px;height: 200px;position: absolute;top:-50px;left: -20px;z-index: 100;display: none;}	
+			.pic:hover img:nth-of-type(2){display: block;border-color:#000000}
+			.listbox p{text-align: center;font-size: 12px;color: #777;}
+			.clear{clear: both;}
+		</style>
+	</head>
+	<body>
+		<div class="listbox">
+			<h3>Hoverbox image</h3>
+			<div class="list">
+				<div class="pic">
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+				</div>
+			</div>
+			<div class="list">
+				<div class="pic">
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+				</div>
+			</div>
+			<div class="list">
+				<div class="pic">
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+				</div>
+			</div>
+			<div class="list">
+				<div class="pic">
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+				</div>
+			</div>
+			<div class="list">
+				<div class="pic">
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+				</div>
+			</div>
+			<div class="list">
+				<div class="pic">
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+					<img src="8d03fa7e82492556e86b2e6d8fdc5c80.jpeg" />
+				</div>
+			</div>
+			<div class="clear"></div>
+			<p>测试文字1234564789</p>														
+		</div>
+	</body>
+</html>

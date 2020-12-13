@@ -1,0 +1,97 @@
+/* 此为首页的样式文件 */
+/* 引入common.less文件 中间有一个空格
+    import导入：将样式文件导入到另外一个样式文件
+    link：引入 把样式文件引入到html文件中
+
+
+    1rem = 50px（默认）
+    */
+@import "common";
+@baseFont: 50 ;
+body{
+    width: 15rem;
+    min-width: 320px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #f2f2f2 ;
+}
+.serach-content{
+    background: #ffc001;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 88rem / @baseFont;
+    display: flex;
+    .classfly{
+        width: 44rem / @baseFont;
+        height:  70rem / @baseFont;
+        margin: 11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+        background: url(../upload/classfly.png) no-repeat;
+        /* 背景缩放 */
+        background-size: 44rem / @baseFont 70rem / @baseFont;
+    }
+    .search{
+        flex: 1;
+        input{
+            /* 去掉点击之后的边框 */
+            outline: none;
+            width: 100%;
+            height: 66rem / @baseFont;
+            border-radius: 33rem / @baseFont;
+            background-color: #fff2cc;
+            border: none;
+            margin-top: 12rem / @baseFont;
+            font-size: 25rem / @baseFont;
+            padding-left: 55rem / @baseFont;
+            color:#757575;
+        }
+    }
+    .login{
+        width: 75rem / @baseFont;
+        height: 70rem / @baseFont;
+        color: #ffffff;
+        margin: 10rem / @baseFont;
+        font-size: 25rem / @baseFont;
+        line-height: 70rem / @baseFont ;
+    }
+}
+.banner{
+    width: 750rem / @baseFont;
+    height: 368rem / @baseFont;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.ad{
+    display: flex;
+    a{
+        flex: 1;
+        img{
+            width: 100%;
+        }
+    }
+}
+nav{
+    width: 750rem / @baseFont;
+    a{
+        width: 150rem / @baseFont;
+        height: 140rem / @baseFont;
+        float: left;
+        text-align: center;
+        img{
+            width: 82rem / @baseFont;
+            height: 82rem / @baseFont;
+            display: block;
+            margin: 10rem / @baseFont auto 0;   
+        }
+        span{
+            width: 82rem / @baseFont;
+            font-size: 25rem / @baseFont;
+            color: #757575;
+        }
+    }
+}

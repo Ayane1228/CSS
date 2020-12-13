@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.outer {
+				width: 500px;
+				height: 500px;
+				background-color: pink;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				/*
+				justify-content（在父元素设置）   设置弹性盒子元素在主轴（横轴）的对齐方式。 
+				 align-items, align-self 设置弹性盒子元素在垂直方向上（纵轴）的对齐方式。*/
+			}
+			.outer img{
+				border: 10px #FFFFFF solid;
+				box-shadow: 0px 5px 0px 1px #000000;
+				
+							/* 				box-shadow:盒子阴影：水平,垂直阴影位置,模糊距离,阴影尺寸,阴影颜色,inset:将外部阴影改为内部阴影
+				*/
+		
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outer">
+			<img src="1.jpg">
+		</div>
+	</body>
+</html>

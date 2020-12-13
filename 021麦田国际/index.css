@@ -1,0 +1,370 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+/* ie浏览器的a标签中若插入图片则会自带边框，在这里去除 */
+#top {
+	height: 167px;
+}
+
+.top {
+	width: 1350px;
+	height: 167px;
+	margin: 0 auto;
+
+}
+
+.top .logo {
+	float: left;
+	padding-top: 80px;
+	padding-right: 52px;
+}
+
+.top ul {
+	float: right;
+	/* 右浮动让它到右边 */
+	padding-right: 50px;
+}
+
+.top ul li {
+	float: left;
+	/* 左浮动之后在一排上显示 */
+	padding-top: 95px;
+	/* 设置li和顶部的距离正好是li在底部 */
+}
+
+.top ul li a {
+	border-radius: 6px 6px 0 0;
+	font-size: 12px;
+	color: #010101;
+	padding: 0 16px;
+	display: block;
+	/* a为内联元素 */
+	height: 72px;
+	line-height: 72px;
+
+}
+
+.top ul li a:hover {
+	color: #ffffff;
+	background-color: #f75a53;
+}
+
+.top span {
+	float: left;
+	padding-top: 84px;
+	padding-right: 113px;
+	color: #cccccc;
+}
+
+#first {
+	height: 417px;
+	background-color: #aaaa7f;
+}
+
+#first img {
+	width: 100%;
+	height: 417px;
+}
+
+#second {
+	width: 860px;
+	height: 350px;
+	margin: 0 auto;
+}
+
+#second .text h1 {
+	text-align: center;
+	font-size: 26px;
+	padding-top: 29px;
+	padding-bottom: 18px;
+}
+
+#second .text p {
+	font-size: 15px;
+	color: #dedede;
+	text-align: center;
+}
+
+#second ul li {
+	float: left;
+	padding-bottom: 40px;
+}
+
+#second ul li a {
+	border: 1px #000000 sollid;
+	display: block;
+	width: 170px;
+	height: 89px;
+}
+
+#third {
+	height: 488px;
+	background-color: #000000;
+}
+
+.third {
+	width: 1350px;
+	height: 488px;
+	margin: 0 auto;
+}
+
+.third h1 {
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 33px;
+	padding-bottom: 13px;
+}
+
+.third p {
+	font-size: 15px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.third ul li {
+	float: left;
+	width: 310px;
+	height: 237px;
+	background-color: #cfcfd1;
+	margin-right: 50px;
+
+}
+
+.third ul li:nth-child(1) {
+	margin-left: 120px;
+}
+
+.third ul li a {
+	display: block;
+	color: #010100;
+	padding: 0 45px;
+	font-size: 12px;
+	line-height: 20px;
+	/* 行间距13px */
+}
+
+.third ul li b {
+	text-align: center;
+	display: block;
+	color: #f15954;
+	font-size: 16px;
+	padding-bottom: 19PX;
+	padding-top: 96px;
+}
+/* 变成块状元素之后自动换行显示 */
+/* logo没有图片 用.third ul li a：before{background-img：url（背景图）变为块状元素，
+宽高设置为130*130，在用定位调整位置，top-65px，left：105px} */
+
+#firth {
+	height: 741px;
+}
+#firth a b{
+	display: block;
+	text-align: center;
+	font-size: 26px;
+	color: #000000;
+	padding-top: 47px;
+	padding-bottom: 18px;
+}
+#firth a {
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	color: #c6c6c6;
+}
+#firth ul {
+	width: 732px;
+	margin: 0 auto;
+	padding-top: 27px;
+	overflow: hidden;/* ul li 浮动了发生了高度塌陷 */
+	padding-bottom:20px ;
+	
+}
+#firth ul li a{
+	display: block;
+	float: left;
+	width: 183px;
+	height: 32px;
+	color: #FFFFFF;
+	background-color: #747273;
+	line-height: 32px;
+	text-align: center;
+	
+}
+#firth ul li a:hover{
+	background-color: #e54142;
+}
+/* 下放出现小红标为设置#firth ul li：hover{background-img（...） no-repeat center bottom；} */
+#firth ol{
+	 width: 1071px;
+	 margin: 0 auto;
+}
+#firth ol li{
+	margin-right: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+#firth ol li a img{
+	display: block;
+	width: 327px;
+	height: 233px;
+}
+#firth ol li a{
+	display: block;
+}
+#fifth {
+	height: 475px;
+}
+#fifth img{
+	width: 100%;
+	height: 475px;
+}
+
+#sixth {
+	width: 1140px;
+	height: 329px;
+	margin:0 auto;
+}
+#sixth div{
+	float: left;
+	width: 345px;
+}
+#sixth .nav1  h1{
+	font-size: 16px;
+	padding-top: 43px;
+	padding-bottom: 30px;
+}
+#sixth .nav1 li a{
+	display: block;
+	font-size: 14px;
+	color: #434343;
+	height: 28px;
+	line-height: 28px;
+}
+#sixth div p a{
+	margin-top:20px ;
+	display: block;
+	width: 104px;
+	height: 28px;
+	border-radius:2px ;
+	background-color: #f85953;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: center;
+	line-height: 28px;
+}
+#seventh{
+	height: 488px;
+	background-color: #797979 ;
+}
+#seventh div{
+	float: left;
+}
+#seventh .bokking{
+	width: 311px;
+	height: 365px;
+	padding-left:120px ;
+	padding-top:45px ;
+	}
+#seventh .bokking h1{
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-bottom:30px;
+}
+#seventh .bokking ul li input{
+	width: 300px;
+	height: 31px;
+}
+#seventh .bokking ul li #submit{
+	width: 180px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border: 0;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #f75a53;
+}
+#seventh .bokking ul li{
+	margin-bottom: 20px;
+}
+#seventh .link {
+	float: left;
+	height: 76px;
+	width: 1034px;
+	margin-left:120px ;
+	border-top: 1px solid #000000;
+} 
+#seventh .link ul li a{
+	color: #FFFFFF;
+	font-size:12px ;
+	float: left;
+	display: block;
+	line-height: 76px;
+	padding-right: 12px;
+}
+#seventh .contant{
+		width: 311px;
+		height: 365px;
+		padding-left:120px ;
+		padding-top:45px ;
+		}
+#seventh .contant h1{
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-bottom:30px;
+}
+#seventh .contant ul li{
+	font-size: 12px;
+	color: #ffffff;
+	padding-bottom: 15px;
+}
+#seventh .contant ol li a{
+	display: block;
+	float: left;
+	font-size: 12px;
+	color: #ffffff;
+	padding-bottom: 15px;
+}
+#seventh .search{
+		width: 311px;
+		height: 365px;
+		padding-left:120px ;
+		padding-top:45px ;
+		}
+#seventh .search h1{
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-bottom:30px;
+}
+#seventh .search span{
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-top: 8px;
+}
+#end {
+	height: 95px;
+	background-color: #000000;
+}
+#end p{
+	color: #FFFFFF;
+	line-height: 95px;
+	padding-left: 120px;
+	font-size: 12px;
+}

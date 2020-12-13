@@ -1,0 +1,191 @@
+body{
+    width:100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #ffffff;
+    font-size: 14px;
+    font-family: -apple-system,Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666666;
+}
+a{
+    color: #666666;
+    text-decoration: none;
+}
+img{
+    /* 去掉图片的空白部分 */
+    vertical-align: top;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+.app{
+    height: 45px;
+}
+.app ul li{
+    height: 45px;
+    background-color: #333333;
+    float: left;
+}
+.app ul li:nth-child(1){
+    width: 8%;
+    line-height: 45px;
+    text-align: center;    
+}
+.app ul li:nth-child(1) img{
+    width: 10px;
+}
+.app ul li:nth-child(2){
+    width: 10%;
+    line-height: 45px;
+    text-align: center;
+
+}
+.app ul li:nth-child(2) img{
+    width: 30px;
+    vertical-align: middle;
+    /* 让图片与文字居中对齐（默认为基线对齐） */
+} 
+.app ul li:nth-child(3){
+    width: 57%;
+    text-align: center;
+    color: #ffffff;
+    line-height: 45px;
+}
+.app ul li:nth-child(4){
+    width: 25%;
+    background-color: #f63f1f;
+    text-align: center;
+}
+.app ul li:nth-child(4) a{
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 45px;
+}
+.search-wrap{
+    overflow: hidden;
+    position: fixed;
+    height:40px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+}
+.search-btn{
+    width: 40px;
+    height:44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.search-btn::before{
+    width: 20px;
+    height: 18px;
+    display: block;
+    content: '';
+    background: url(../images/s-btn.png);
+    background-size:20px 18px;
+    margin:14px 0 0 15px;
+}
+.search-login{
+    width: 40px;
+    height:44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ffffff;
+    line-height: 44px;
+    text-align: center;
+    }
+.search{
+    position: relative;
+    height: 30px;
+    margin: 50px;
+    margin-top: 7px;
+    border-radius: 15px;
+    background-color:#ffffff ;
+}
+.id-icon{
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    left: 13px;
+    top: 8px;
+    background: url(../images/jd.png) no-repeat;
+    background-size:20px 15px;
+}
+.id-icon::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #cccccc;
+    position: absolute;
+    top: 0;
+    right: -8px;
+}
+.sou{
+    width: 18px;
+    height: 15px;
+    background-color: pink;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    /* 二倍精灵图 将精灵图等比例缩放为50%之后测量坐标 并将size变为原图的一半*/
+    background:url(../images/jd-sprites.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+.slider img{
+    width: 100%;
+}
+.brand{
+    overflow: hidden;
+    border-radius: 10px 10px 0 0 ;
+}
+.brand div{
+    width: 33.3333333333%;
+    float: left;
+}
+.brand div img{
+    width:100%;
+}
+nav{
+    overflow: hidden;
+    padding-top: 4px;
+}
+nav a{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+nav a img{
+    width: 40px;
+    margin: 10px 0;
+}
+nav a span{
+    display: block;
+}
+.news {
+    margin-top: 20px;
+}
+
+.news img {
+    width: 100%;
+}
+
+.news a {
+    float: left;
+    box-sizing: border-box;
+}
+
+.news a:nth-child(1) {
+    width: 50%;
+}
+
+.news a:nth-child(n+2) {
+    width: 25%;
+    border-left: 1px solid #ccc;
+}

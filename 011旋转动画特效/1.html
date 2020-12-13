@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			div{
+					width: 300px;
+					height:300px;
+					border-radius: 50%;
+					background-color: #000000;
+					font-size: 50px;
+					color: #FFFFFF;
+					text-align: center;
+					line-height: 300px;
+					margin: 0 auto;
+					position: relative;}
+			p{
+					width: 260px;
+					height:260px;
+					border-radius: 50%;	
+					background-image: url(1.jpg);			
+					position: absolute; top: 0;
+					border: 20px solid rgba(255,255,255,0.5);
+					background-origin: border-box;
+					transform-origin: left center;/* 改变旋转的基点位置 */
+					transition: 1s;
+			}
+			div:hover p{transform: rotateY(180deg);}		
+		</style>
+	</head>
+	<body>
+		<div>gakki
+							<p></p>
+		</div>
+
+	</body>
+</html>

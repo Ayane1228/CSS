@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			div{
+					width: 300px;
+					height:300px;
+					border-radius: 50%;
+					background-color: #000000;
+					margin: 50px auto;
+					background-image: url(1.jpg);
+					position: relative;
+				}
+				div img{
+					width: 300px;
+					height: 300px;
+					border-radius: 50%;
+				}
+				div p{
+					width: 280px;
+					height:280px;
+					border-radius: 50%;
+					border:10px solid #f00;
+					border-radius: 50%;
+					border-top-color: #ff0;
+					border-left-color: #ff0;
+					position: absolute;
+					transition: 1s; 
+					top: 0;
+					left: 0;
+					
+				}
+			div h1{
+				width: 300px;
+				height:300px;
+				border-radius: 50%;
+				line-height: 300px;
+				text-align: center;
+				font-size: 50px;
+				background-color:rgba(0,0,0,0);
+				color: #ffffff;
+				position: absolute;
+				transition: 1s;
+				top: 0;
+				left: -300px;
+				opacity: 0;
+			}
+			div:hover p{
+				transform: rotate(180deg);
+			}	
+			div:hover h1{
+				left: 0;
+				background-color: rgba(0,0,0,0.5);
+				opacity: 1;
+			}
+
+				</style>
+	</head>
+	<body>
+		<div>	
+		<img src="1.jpg">
+			<p></p>
+			<h1>gakki</h1>
+		</div>
+
+	</body>
+</html>

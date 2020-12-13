@@ -1,0 +1,178 @@
+/* 
+    设计稿为1280px 修改最大宽度 
+    媒体查询 大于等于1280 将container修改1280 
+*/
+@media screen and (min-width:1280px){
+    .container{
+        width: 1280px;
+    }
+}
+/* 去掉ul的样式和margin padding值 */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* a的颜色为666 去掉下划线 hover时也去掉下划线 */
+.nav ul li a{
+    color: #666;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    text-decoration: noen;
+}
+/* 去掉p的margin值 */
+p{
+    margin: 0;
+}
+/* 去除.header中的padding-left值 提高权重 */
+.header{
+    padding-left:0;
+}
+/* 修改 a标签中的img的最大宽度为100% 自适应变化   */
+.header a img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* nav背景色eee 下边框ccc */
+.nav{
+    background-color: #eeeeee;
+    border-bottom: 1px solid #cccccc;
+}
+/* 当进入小屏幕和超小屏幕的时候 sm xs的a 浮动width为20% */
+@media screen and (max-width:992px){
+    .nav ul li {
+        float: left;
+        width: 20%;
+    }
+}
+/* xs修改文字大小 */
+@media screen and (max-width:767px){
+    .nav ul li a {
+        float: left;
+        width: 20%;
+        font-size: 14px;
+        padding-left: 0;
+    }
+    /* xs:news第一个为100% 剩下的为50% */
+    .news li:nth-child(1){
+        width:100%!important;
+    }
+    .news li{
+        width:50%!important;
+    }
+    .publish h3{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:992px){
+    .article{
+        margin-top: 10px;
+    }
+}
+/* 
+    a标签转为block 高度50px 
+    hover背景色为白色，文字颜色#333
+    垂直居中，padding-left：50px 
+*/
+.nav ul li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+}
+.nav ul li a:hover{
+    color: #333333;
+    background-color: #ffffff;
+}
+/*  
+    字体图标使用before引入的 垂直居中 
+    加上与字的距离5px
+ */
+.nav ul li a::before{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+/*     news的5个li 
+    第一个为w50% h266px
+    其余为w25%h128px并都浮动
+    右边框的做法
+    padding-right 10px  */
+.news ul li{
+    width: 25%;
+    height: 128px;
+    float: left;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.news ul li:nth-child(1){
+    width: 50%;
+    height: 266px;
+}           
+/*  加上a，display之后设置的w100% h100%  
+a中img w100%h100% 
+上下padding：上下0 左右10px */
+ .news ul li a{
+     display: block;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     
+ }
+.news ul li a img{
+    width: 100%;
+    height: 100%;   
+}
+/* 
+p标签定位最下面 rgba .5
+文字大小12px w 100% h41px 
+ */
+.news ul li a p{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    width: 100%;
+    height: 41px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    padding: 10px 10px;
+}
+/* 第一个中文字垂直居中 大小较大20px */
+.news ul li:nth-child(1) a p{
+    font-size: 20px;
+    line-height: 41px;
+    padding: 0 10px;
+}
+.publish{
+    /* 上面盒子浮动 要清除浮动 */
+    border-top: 1px solid #cccccc;
+}
+.pic{
+    margin-top: 10px;
+}
+.pic img{
+    width: 100%;
+}
+.publish .row{
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0 ;
+}
+.banner img{
+    width: 100%;
+}
+.hot{
+    display: block;
+    margin-top: 10px;
+   padding: 0 20px 20px;
+    border: 1px solid #cccccc;
+}
+.hot span{
+    border-radius: 0;
+    margin: 10px 0 10px 0;
+}
+.hot p{
+    font-size: 12px;
+}
